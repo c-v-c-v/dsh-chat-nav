@@ -14,10 +14,9 @@ English: A DeepSeek Harness plugin: ChatGPT-style hover quick-navigation for the
 ## 安装
 
 ```sh
-dsh plugin --profile <web-profile> add <本目录>
+# 从 GitHub 安装到 web profile
+dsh plugin --profile web add github:c-v-c-v/dsh-chat-nav
 ```
-
-浏览器可见要求 profile 含 `@deepseek-ai/dsh-web-app`。
 
 ## 使用
 
