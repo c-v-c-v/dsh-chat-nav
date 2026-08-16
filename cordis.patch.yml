@@ -1,0 +1,6 @@
+# dsh-chat-nav bundle patch: 在 web 表面上插入聊天快捷导航插件行。
+# 应用在 dsh-web-app 层之后（按 profile bundles 列表顺序），因此本行能
+# 看到 web 表面声明的槽位（shell.overlay / conversation.session.header.utilities）。
+- insert:
+    - id: ui-chat-nav
+      name: dsh-chat-nav

@@ -1,0 +1,32 @@
+{
+  "name": "dsh-chat-nav",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 插件：聊天窗口右侧快捷导航（ChatGPT 式悬停滑出、按提问跳转）· A DeepSeek Harness plugin: ChatGPT-style hover quick-nav for the web chat",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  },
+  "license": "MIT"
+}
